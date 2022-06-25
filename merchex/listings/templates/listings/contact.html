@@ -1,0 +1,21 @@
+{% extends 'listings/base.html' %}
+
+{% block content %}
+
+    <h1>Nous sommes là pour vous aider</h1>
+    <form action="" method="POST" novalidate>
+        {% csrf_token %}
+
+        {{form.as_p}}
+ <input type="submit" value="Envoyer">
+    </form>
+    <div style="display: inline-block;">
+    <i class="fa-solid fa-phone"> 90500075 /94340400</i>  <br>
+    <i class="fa fa-envelope" >yaomariussodokin@gmail.com</i><br>
+   <i class="fa fa-facebook"> Sodokin Yao Marius</i><br>
+    <i class="fa fa-whatsapp">90500075</i><br>
+    <i class="fa fa-instagram" >Yao MArius SODOKIN</i><br>
+    <i class="fa fa-linkedin"> sODOKIN mARIUS</i><br>
+</div>
+
+ {% endblock %}

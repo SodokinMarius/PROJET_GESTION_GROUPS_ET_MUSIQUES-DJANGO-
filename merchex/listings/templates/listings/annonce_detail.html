@@ -1,0 +1,17 @@
+{% extends 'listings/base.html' %}
+
+{% block content %}
+ 
+<h2> {{annonce.title}} </h2>
+<ul>
+    <li>Description :{{ annonce.description}}</li>
+    <li> A ETE SOLDE : {{annonce.sold | yesno}}</li>
+     <li> ANNEE DE PUBLICATION : {{annonce.year}}</li>
+    <li> TYPE D'ANNONCE : {{annonce.get_typeA_display}}</li>
+    <li> GROUPE AUTEUR : {{annonce.band}}</li>
+</ul>
+<a href="{% url 'annonce-list' %}"> <button >RETOUR A LA LISTE DES ANNONCES</button></a>
+<a href="{% url 'annonce-update'  annonce.id %}"> <button >Modifier</button></a>
+<a href="{% url 'annonce-delete'  annonce.id %}"> <button >Supprimer</button></a>
+
+{% endblock %}

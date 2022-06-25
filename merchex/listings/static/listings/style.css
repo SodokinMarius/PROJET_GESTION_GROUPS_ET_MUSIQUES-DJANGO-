@@ -1,0 +1,16 @@
+* {
+    background-color:cadetblue;
+    color: white;
+}
+
+nav{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.errorlist{
+    margin-bottom: -10px;
+    list-style-type: none;
+    color:red;
+}
